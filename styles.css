@@ -113,6 +113,7 @@ button {
   min-height: 50px;
   max-height: 56px;
   width: fit-content;
+  overflow: hidden;
   border: 0;
   border-radius: 999px;
   padding: 14px 28px;
@@ -120,6 +121,12 @@ button {
   line-height: 1;
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.shine {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
 
 .header-cta {
@@ -142,6 +149,7 @@ button {
   z-index: 1;
   width: 45%;
   pointer-events: none;
+  border-radius: inherit;
   transform: rotate(18deg);
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.68), transparent);
   transition: left 0.7s ease;
@@ -170,6 +178,7 @@ button {
   z-index: 1;
   width: 50%;
   pointer-events: none;
+  border-radius: inherit;
   transform: rotate(18deg);
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.62), transparent);
   transition: left 0.7s ease;
@@ -256,11 +265,7 @@ p {
   margin: 0;
 }
 
-h1,
-.section-head h3,
-.split__copy > h3,
-.booking__box h3,
-.contact__grid h3 {
+h1 {
   font-family: "Playfair Display", Georgia, serif;
   line-height: 0.98;
 }
@@ -270,15 +275,9 @@ h1 {
   font-size: clamp(2.85rem, 5.4vw, 5rem);
 }
 
-.section-head h3,
-.split__copy > h3,
-.booking__box h3,
-.contact__grid h3 {
-  font-size: clamp(2.2rem, 5vw, 4.6rem);
-}
-
 h3 {
   font-size: 1.25rem;
+  line-height: 1.2;
 }
 
 p {
@@ -457,9 +456,8 @@ p {
 
 .procedure-slide h3 {
   color: var(--carbon);
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2rem, 4vw, 4rem);
-  line-height: 1;
+  font-size: 1.35rem;
+  line-height: 1.2;
 }
 
 .procedure-slide p {
@@ -1301,13 +1299,6 @@ details p {
 @media (max-width: 430px) {
   h1 {
     font-size: 2.62rem;
-  }
-
-  .section-head h3,
-  .split__copy > h3,
-  .booking__box h3,
-  .contact__grid h3 {
-    font-size: 2.18rem;
   }
 
   .site-header {
