@@ -1,15 +1,15 @@
 :root {
-  --carbon: #2f2722;
-  --ink: #3c3029;
-  --wine: #77472f;
-  --plum: #75665e;
+  --carbon: #5a4035;
+  --ink: #5f4a40;
+  --wine: #8a573d;
+  --plum: #806b61;
   --rose: #ead4ca;
   --blush: #f8efe9;
   --gold: #aa7047;
   --sage: #c8957d;
   --cream: #fffaf6;
   --paper: #fffdf9;
-  --muted: #75665e;
+  --muted: #806b61;
   --white: #ffffff;
   --shadow: 0 24px 70px rgba(119, 71, 47, 0.12);
 }
@@ -249,6 +249,14 @@ button {
   text-shadow: 0 2px 18px rgba(255, 250, 246, 0.78);
 }
 
+@media (min-width: 769px) {
+  .hero__content {
+    padding-top: 116px;
+    padding-bottom: 44px;
+    transform: translateY(-2vh);
+  }
+}
+
 .eyebrow {
   display: inline-flex;
   width: fit-content;
@@ -266,8 +274,10 @@ p {
 }
 
 h1 {
-  font-family: "Playfair Display", Georgia, serif;
-  line-height: 0.98;
+  color: var(--carbon);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  line-height: 0.96;
 }
 
 h1 {
@@ -276,7 +286,10 @@ h1 {
 }
 
 h3 {
+  color: var(--carbon);
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -372,7 +385,7 @@ p {
 
 .metrics strong {
   color: var(--wine);
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: clamp(2.4rem, 5vw, 4rem);
 }
 
@@ -764,7 +777,7 @@ p {
   top: 18px;
   right: 34px;
   color: rgba(201, 167, 103, 0.28);
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 8rem;
   line-height: 1;
 }
