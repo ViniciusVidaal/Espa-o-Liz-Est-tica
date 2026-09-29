@@ -955,6 +955,16 @@ details p {
   text-align: center;
 }
 
+.contact__grid h3 {
+  color: var(--cream);
+  text-shadow: 0 12px 28px rgba(47, 39, 34, 0.24);
+}
+
+.contact__grid .eyebrow {
+  color: var(--rose);
+  text-shadow: 0 10px 24px rgba(47, 39, 34, 0.24);
+}
+
 .contact__actions {
   justify-items: center;
   align-self: start;
